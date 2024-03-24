@@ -1,0 +1,79 @@
+ccna routing : 
+
+1. Default route : 
+@Sw : 
+ip route 0.0.0.0 0.0.0.0 10.52.52.1 1
+!BACKUP route/floating stating route
+ip route 0.0.0.0 0.0.0.0 11.52.52.1 20
+
+
+2. @Sw:OSPF : 
+
+
+
+
+
+
+how to factory reset routing: 
+
+config t
+no ip routing 
+ip routing
+end
+
+__________________________________________________________
+
+
+Task1 : Create a STATIC ROUTE for P1 going to vlan 200
+
+
+@p1
+conf t
+ip route 192.168.1.128 255.255.255.224 10.2.1.1 1
+ip route 192.168.1.128 255.255.255.224 10.2.1.2 23
+!longest Prefix-rule
+ip route 192.168.1.130 255.255.255.255 10.2.1.2
+
+__________________________________________________________
+
+EIGRP : 2 year Experience lvl : 
+show ip route connected | inc C
+172.16.100.100 /27
+10.100.200.100 /26
+router eigrp 100
+network 172.16.100.96 0.0.0.31
+network 10.100.200.64 0.0.0.63
+
+
+_______________________________________________________________
+
+Default route fir p1/p2 
+
+@R1: 
+config t
+router bgp 1
+bgp router-id 1
+neighbor 209.9.9.3 remote-as 3
+neighbor 207.7.7.2 remote-as 2
+neighbor 208.8.8.4 remote-as 45
+network 209.9.9.0 mask 255.255.255.0
+network 208.8.8.0 mask 255.255.255.0
+network 207.7.7.0 mask 255.255.255.0
+network 10.1.1.0 mask 255.255.255.0
+address-family ipv4
+ neighbor 20.9.9.3 activate
+ neighbor 207.7.7.2 activate
+ neighbor 208.8.8.4 activate
+exit
+
+
+
+
+config t
+ip routing
+router ospf 1
+network 10.0.0.0 0.255.255.255 area 0
+
+
+
+
