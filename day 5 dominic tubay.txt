@@ -1,0 +1,66 @@
+git clone https://github.com/rivan16/sshansible
+
+DAY 5 
+
+1. Download Ansible tower
+2. CSR1000v -> automate
+
+
+TASK1 : HOW TO BE A SWITCHING EXPERT IN 4 HOURS . 
+1. magaling sa tuod . 
+ MODE button. - "sys" = Green
+2.Kislap Test : 
+spanning tree protocol : 30s : blk-lis-lrn-fwd
+rapidSTP
+3. How to get fired instantly:
+ - do not buy: cisco , hp , fortinent , dell , hauwei
+  buy lazada switch
+ - loop
+
+Skill Set
+
+802.1Q
+802.1D
+802.1W
+802.1X
+
+6 .Can configure lan network security using port security
+
+
+config t
+line vty 0 14
+ no login local
+
+config t
+int range fa 0/10-12
+no shut
+
+
+
+THE GAME PLAN : 
+
+Why : better career and better swaldo x2
+How : 
+ 1. 5 of your friends
+   - Network Engineer
+   - Net Sec Analyst
+   - Devops
+ 2. do now , sisi later : 
+   update to resume to hayup level -> send it . 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
